@@ -69,6 +69,8 @@ class Form(FramelessWindow):
 if __name__ == '__main__':
     import sys
 
+    # 适配高分辨率
+    QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     app = QApplication(sys.argv)
     app.setStyle('fusion')
     form = Form()
